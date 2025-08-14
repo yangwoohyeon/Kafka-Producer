@@ -6,7 +6,7 @@ public class EmailSendMessage { //카프카로 보내는 Message 객체
     private String subject;  //이메일 제목
     private String body;  //이메일 본문
 
-    public EmailSendMessage(String body, String subject, String to, String from) {
+    public EmailSendMessage(String body, String to, String subject, String from) {
         this.body = body;
         this.subject = subject;
         this.to = to;
