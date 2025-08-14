@@ -22,7 +22,7 @@ public class EmailService {
             request.getBody()
         );
 
-        this.kafkaTemplate.send("email.send",toJsonString(emailSendMessage));
+        this.kafkaTemplate.send("email.send",toJsonString(emailSendMessage)); //email.send라는 토픽에 전달
     }
     private String toJsonString(Object object) { //객체를 JSON 문자열로 직렬화 (카프카의 key-value 형식이 String형식이기 때문)
         ObjectMapper objectMapper = new ObjectMapper();
