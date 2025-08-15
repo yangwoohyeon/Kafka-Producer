@@ -6,3 +6,5 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
 
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        partitioner.class:  org.apache.kafka.clients.producer.RoundRobinPartitioner
