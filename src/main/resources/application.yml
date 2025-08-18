@@ -1,6 +1,10 @@
 spring:
   kafka:
-    bootstrap-servers: 43.200.43.104:9092
+    bootstrap-servers:
+    - 43.200.43.104:9092
+    - 43.200.43.104:19092
+    - 43.200.43.104:29092
+
     producer:
 
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
